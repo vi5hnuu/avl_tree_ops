@@ -5,7 +5,7 @@ using namespace std;
 
 template<typename Comparable>
 class AVL{
-  public:
+  private:
     class AvlNode{
     public:
       Comparable element;
@@ -20,6 +20,7 @@ class AVL{
       }
       int getHeight() const;
     };
+  public:
     AvlNode *root{};
     void rotateWithLeftChild(AvlNode *&k2);
     void rotateWithRightChild(AvlNode *&k2);
@@ -29,11 +30,11 @@ class AVL{
     void inorder() const;
     void preorder() const;
     void postorder() const;
-    private:
-      void inorder(AvlNode *root) const;
-      void preorder(AvlNode *root) const;
-      void postorder(AvlNode *root) const;
-      void insert(const Comparable x,AvlNode *&root);
+  private:
+    void inorder(AvlNode *root) const;
+    void preorder(AvlNode *root) const;
+    void postorder(AvlNode *root) const;
+    void insert(const Comparable x,AvlNode *&root);
 };
 
 template<typename Comparable>
