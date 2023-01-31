@@ -1,4 +1,3 @@
 # avl_tree_ops
 
-AVLNODE.cpp -> X 
-AVL -> clean code
+AVLNODE.cpp -> X | AVLCLASS -> clean code
